@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+file:
+  storage:
+    location: fileStorage
