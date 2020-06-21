@@ -14,6 +14,15 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	//spring data
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//my sql connector
+	compile 'mysql:mysql-connector-java:8.0.17'
+
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
