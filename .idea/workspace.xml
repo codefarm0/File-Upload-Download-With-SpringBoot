@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ab6a2f4-73fa-45a9-a879-319c4742bb09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/File Operations With Spring Boot.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/File Operations With Spring Boot.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileUploadDownload/src/main/java/com/greenlearner/fileUploadDownload/controller/FileUploadWithFrontEndCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileUploadDownload/src/main/java/com/greenlearner/fileUploadDownload/controller/FileUploadWithFrontEndCode.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dnWfZJyUcKtd2FoElRXN4SwmT9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Green Learner/Searching and Sorting" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ab6a2f4-73fa-45a9-a879-319c4742bb09" name="Default Changelist" comment="" />
+      <created>1593061441177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593061441177</updated>
+    </task>
+    <servers />
+  </component>
+</project>
