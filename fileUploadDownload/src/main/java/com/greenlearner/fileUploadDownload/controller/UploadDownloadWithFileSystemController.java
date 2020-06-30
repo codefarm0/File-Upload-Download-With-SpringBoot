@@ -14,7 +14,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +53,7 @@ public class UploadDownloadWithFileSystemController {
     }
 
     @GetMapping("/download/{fileName}")
-    ResponseEntity<Resource>downLoadSingleFile(@PathVariable String fileName, HttpServletRequest request){
+    ResponseEntity<Resource> downLoadSingleFile(@PathVariable String fileName, HttpServletRequest request) {
 
         Resource resource = fileStorageService.downloadFile(fileName);
 
@@ -67,18 +66,19 @@ public class UploadDownloadWithFileSystemController {
         } catch (IOException e) {
             mimeType = MediaType.APPLICATION_OCTET_STREAM_VALUE;
         }
+        mimeType = mimeType == null ? MediaType.APPLICATION_OCTET_STREAM_VALUE : mimeType;
 
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(mimeType))
 //                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment;fileName="+resource.getFilename())
-                .header(HttpHeaders.CONTENT_DISPOSITION, "inline;fileName="+resource.getFilename())
+                .header(HttpHeaders.CONTENT_DISPOSITION, "inline;fileName=" + resource.getFilename())
                 .body(resource);
     }
 
     @PostMapping("/multiple/upload")
-    List<FileUploadResponse> multipleUpload(@RequestParam("files") MultipartFile[] files){
+    List<FileUploadResponse> multipleUpload(@RequestParam("files") MultipartFile[] files) {
 
-        if(files.length > 7){
+        if (files.length > 7) {
             throw new RuntimeException("too many files");
         }
         List<FileUploadResponse> uploadResponseList = new ArrayList<>();
@@ -106,7 +106,7 @@ public class UploadDownloadWithFileSystemController {
     void zipDownload(@RequestParam("fileName") String[] files, HttpServletResponse response) throws IOException {
 //zipoutstream - zipentry+zipentry
 
-        try(ZipOutputStream zos = new ZipOutputStream(response.getOutputStream())){
+        try (ZipOutputStream zos = new ZipOutputStream(response.getOutputStream())) {
             Arrays.asList(files)
                     .stream()
                     .forEach(file -> {
