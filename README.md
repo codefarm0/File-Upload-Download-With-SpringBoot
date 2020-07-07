@@ -14,7 +14,7 @@
 
 Below is the future plan that can be looked into. As soon as i compelte video, will update the link
 
-* [Part - 5 Java Client to call the file-upload service] - TODO
+* [Part - 5 Java Client to call the file-upload service](https://youtu.be/t0Xy_Y9w6ik)
 
 * [Part - 6 Angular Application to call the file-upload service and upload/download file] - TODO
 
